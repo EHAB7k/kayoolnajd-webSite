@@ -1,0 +1,70 @@
+
+.article {
+    width: 520px;
+  height: 900px;
+  background-image: url('/Users/ehabhakmi/Desktop/React-Material-UI-5-Responsive-Blog/ui/src/static/image4.jpg');
+   /* background-size: 100% 100%;  */
+  /* border: 1px solid red; */
+}
+
+.picture {
+    
+}
+
+.ehab {
+    font-size: 20px;
+    /* color: rgb(255, 255, 255); */
+    text-align: right;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    margin: auto;
+    /* color: linear-gradient(to right, rgb(255, 12, 12) 30%, transparent 80%), */
+}
+
+
+.content {
+   
+  
+  font-size: 0;
+  width: 650px;
+  height: 250px;
+  padding: 20px;
+  background-image: linear-gradient(to right, rgb(69, 112, 161) 8%, transparent 100%);
+  margin: auto;
+  margin-bottom: 12px;
+  border-radius: 7px;
+  /* opacity: 0.8; */
+}
+
+
+
+
+.left, .right {
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    /* background-color: rgb(82, 83, 83, 0.337); */
+    /* background-image: linear-gradient(to right, rgb(255, 12, 12) 30%, transparent 80%); */
+    margin: auto;
+}
+
+.left {
+    /* background-color:rgb(82, 83, 83, 0.337);  */
+   margin-right: -70px;
+   
+   
+}
+
+.right {
+  /* background-color:rgb(82, 83, 83, 0.337);  */
+}
+
+
+
+
+/* for count us */
+
