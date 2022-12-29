@@ -1,4 +1,4 @@
-import { Box, CardContent, CardMedia, Link, Typography } from "@mui/material";
+import { Box, CardContent, CardMedia, Link} from "@mui/material";
 import React from "react";
 
 const Card = ({ cardImage }) => {

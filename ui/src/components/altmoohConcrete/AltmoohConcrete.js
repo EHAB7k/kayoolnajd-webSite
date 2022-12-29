@@ -1,4 +1,4 @@
-import { Box, CardMedia, Container, Stack, Typography } from "@mui/material";
+import { Box,Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import postImage from "../../static/alt3.jpg";
 
@@ -11,7 +11,6 @@ const AltmoohConcrete = () => {
           backgroundImage: `url(${postImage})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
-          height: "300px",
           height: 200,
           width: 230,
           mt:1,

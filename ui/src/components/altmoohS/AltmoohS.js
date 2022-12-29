@@ -1,9 +1,9 @@
-import { Box, CardMedia, Container, Stack, Typography } from "@mui/material";
+import { Box,Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import postImage from "../../static/serviceAltmooh.jpg";
 
 import Categories from "/Users/ehabhakmi/Desktop/kayoolnajd-webSite/ui/src/components/category/Categories.js";
-import Hero from "../hero/Hero";
+
 const AltmoohS = () => {
   return (
     
@@ -23,7 +23,6 @@ const AltmoohS = () => {
                 backgroundImage: `url(${postImage})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
-                height: "300px",
                 height: 200,
                 width: 195,
                 margin: "auto"

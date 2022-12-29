@@ -11,10 +11,8 @@ import AltmoohConcrete from "./components/altmoohConcrete/AltmoohConcrete";
 
 import AltmoohL from "./components/altmoohL/AltmooL";
 import Categories from "./components/category/Categories";
-import Recents from "./components/recents/Recents";
-import { Box,Stack} from "@mui/material";
+import { Box} from "@mui/material";
 
-import Hero from "./components/hero/Hero";
 import ContactForm from "./components/contactForm/ContactForm";
 
 function App() {

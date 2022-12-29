@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Box, Stack, Typography, styled,Button,Link,} from "@mui/material";
+import { Box, Stack, Typography, styled,Link,} from "@mui/material";
 import { Facebook,Twitter,LinkedIn} from "@mui/icons-material/";
 
 const SocialBox = styled(Box)({
@@ -20,9 +20,9 @@ const Footer = () => {
       <div className="row">
         <div className="col-md-3">
           <div className="info-logo">
-            <a href="">
+            
               <img src="assets/images/image5.jpg"  style={{width:"260px",}}  alt=""/>
-            </a>
+            
             <Typography
               m={1}
               color={"white"}

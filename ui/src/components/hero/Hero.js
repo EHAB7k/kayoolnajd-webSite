@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import HeroImage from "../../static/00jYRQN-arabian-horse-wallpaper.jpg";
- import postImage5 from "../../static/image5.jpg";
+//  import postImage5 from "../../static/image5.jpg";
 const Hero = () => {
   return (
     <Box>

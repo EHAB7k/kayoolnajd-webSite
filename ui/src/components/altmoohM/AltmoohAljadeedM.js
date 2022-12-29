@@ -1,8 +1,6 @@
-import { Box, CardMedia, Container, Stack, Typography } from "@mui/material";
+import { Box,Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import postImage from "../../static/AltmoohAljadeed.jpg";
-
-import Categories from "../category/Categories";
 
 const AltmoohAljadeedM = () => {
   return (
@@ -23,7 +21,6 @@ const AltmoohAljadeedM = () => {
             backgroundImage: `url(${postImage})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
-            height: "300px",
             height: 200,
             width: 195,
             margin: "auto"

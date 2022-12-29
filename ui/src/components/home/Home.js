@@ -6,6 +6,7 @@ import Recents from "../recents/Recents";
 
 
 const Home = () => {
+ 
   return (
     <Box>
        
