@@ -134,7 +134,6 @@ const Footer = () => {
             <div>
             <SocialBox  >
             <div > <a   href="https://www.linkedin.com/company/kayool-najd-holding-co"> <span > <LinkedIn />  </span>  </a> </div>
-            <div > <a  href="https://www.linkedin.com/company/kayool-najd-holding-co"> <span > <Facebook />  </span>  </a> </div>
             <div > <a  href="https://twitter.com/kayoolnajd/"> <span > <Twitter /> </span>  </a> </div>
         </SocialBox>
 

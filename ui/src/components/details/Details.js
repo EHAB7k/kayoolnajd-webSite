@@ -1,12 +1,12 @@
 import { Box, CardMedia, Container, Stack, Typography } from "@mui/material";
 import React from "react";
-import detailsImage from "../../static/image5.jpg";
+// import detailsImage from "../../static/image5.jpg";
 import postImage from "../../static/image3.jpg";
 
 const Details = () => {
   return (
     <Box>
-      <Box
+      {/* <Box
         sx={{
           backgroundImage: `url(${detailsImage})`,
           backgroundPosition: "center",
@@ -16,7 +16,7 @@ const Details = () => {
         }}
       >
         
-      </Box>
+      </Box> */}
       <Container>
         
         <Stack
@@ -25,7 +25,7 @@ const Details = () => {
           mt={8}
         >
           <Box flex={3} sx={{ padding: "18px 100px 100px 100px" }}>
-            <Typography
+            {/* <Typography
               m={4}
               align="center"
               color={"gray"}
@@ -35,7 +35,7 @@ const Details = () => {
             شركة خيول نجد القابضة تسعى لأن تكون الأميز في تنوع الاستثمار، لذا تستثمر الشركة في عدة شركات، وتديرها بكفاءة في مختلف القطاعات الاقتصادية
 
 
-            </Typography>
+            </Typography>  */}
             <CardMedia
               component="img"
               height="500px"
@@ -58,7 +58,7 @@ const Details = () => {
 
             </Typography>
             <Typography align="center" variant="h4" mt={2}>
-            رؤية
+            الرؤية
               
             </Typography>
 
