@@ -1,7 +1,7 @@
 import { Box, CardMedia, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import postImage from "../../static/serviceAltmooh.jpg";
-import Rightbar from "../rightbar/Rightbar";
+
 import Categories from "/Users/ehabhakmi/Desktop/kayoolnajd-webSite/ui/src/components/category/Categories.js";
 import Hero from "../hero/Hero";
 const AltmoohS = () => {

@@ -13,7 +13,9 @@ const SocialBox = styled(Box)({
 const Footer = () => {
   return (
     <React.Fragment>
+      
       <section  className="info_section layout_padding2">
+        
     <div className="container">
       <div className="row">
         <div className="col-md-3">
@@ -95,6 +97,8 @@ const Footer = () => {
             <br/>
             {/* end */}
 
+
+
             <div align={"right"} >
 
               <h6 align={"right"}>
@@ -107,6 +111,8 @@ const Footer = () => {
             </div>
             {/* end */}
 
+            
+
 
           </div>
         </div>
@@ -115,8 +121,10 @@ const Footer = () => {
         <Stack
         
                  direction={{ xs: "column"  , sm: "column" }}
-                justifyContent="center"
-                 alignItems="center"
+                justifyContent={{ xs: "center"  , sm: "center" }}
+                 alignItems={{ xs: "center"  , sm: "center" }}
+                 margin={{xs: "100px"  , sm: "auto"}}
+                 mt={{xs: "0px" }}
                  spacing={0}
             >
             <h4>

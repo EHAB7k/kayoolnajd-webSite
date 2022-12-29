@@ -29,13 +29,13 @@
 .content {
    
   
-  font-size: 0;
-  width: 650px;
+  
+  /* width: 600px;
   height: 250px;
-  padding: 20px;
+  padding: 20px; */
   background-image: linear-gradient(to right, rgb(69, 112, 161) 8%, transparent 100%);
   margin: auto;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   border-radius: 7px;
   /* opacity: 0.8; */
 }
@@ -55,6 +55,7 @@
 .left {
     /* background-color:rgb(82, 83, 83, 0.337);  */
    margin-right: -70px;
+   
    
    
 }

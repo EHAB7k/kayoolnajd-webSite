@@ -1,7 +1,7 @@
 import { Box, CardMedia, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import postImage from "../../static/AltmoohAljadeed.jpg";
-import Rightbar from "../rightbar/Rightbar";
+
 import Categories from "../category/Categories";
 
 const AltmoohAljadeedM = () => {

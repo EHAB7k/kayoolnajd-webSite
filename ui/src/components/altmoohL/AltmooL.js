@@ -1,7 +1,7 @@
 import { Box, CardMedia, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import postImage from "../../static/alt5.jpeg";
-import Rightbar from "../rightbar/Rightbar";
+
 import Categories from "../category/Categories";
 
 const AltmooL = () => {

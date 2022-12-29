@@ -2,7 +2,7 @@ import { Box, CardMedia, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import detailsImage from "../../static/image5.jpg";
 import postImage from "../../static/image3.jpg";
-import Rightbar from "../rightbar/Rightbar";
+
 const Details = () => {
   return (
     <Box>
@@ -87,7 +87,7 @@ const Details = () => {
             </Typography>
           </Box>
           <Box flex={1}>
-            <Rightbar />
+            
           </Box>
         </Stack>
       </Container>

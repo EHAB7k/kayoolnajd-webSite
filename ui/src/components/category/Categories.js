@@ -33,6 +33,7 @@ const Categories = () => {
     justifyContent="center"
     alignItems="center"
     spacing={2}
+    marginBottom= "10%"
   
          
         // spacing={{ xs: 2, sm: 0, md: 4 }}

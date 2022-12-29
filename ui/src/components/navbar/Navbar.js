@@ -1,3 +1,4 @@
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import React, { useState } from "react";
 import {
   AppBar,
@@ -9,6 +10,9 @@ import {
   Toolbar,
   Typography,
   Button,
+  IconButton,
+  Stack,
+  Link
 } from "@mui/material";
 import {
   Facebook,
@@ -19,6 +23,26 @@ import {
 } from "@mui/icons-material/";
 
 const Navbar = () => {
+  const [anchorEl, setAnchorEl] = useState (null);
+const open = Boolean(anchorEl);
+const handleClick = event => {
+  setAnchorEl(event.currentTarget);
+};
+const handleClose = () => {
+  setAnchorEl(null);
+};
+
+const [anchorEl2, setAnchorEl2] = useState (null);
+const open2 = Boolean(anchorEl2);
+const handleClick2 = event => {
+  setAnchorEl2(event.currentTarget);
+};
+
+const handleClose2 = () => {
+  setAnchorEl2(null);
+};
+
+
   const StyledToolbar = styled(Toolbar)({
     display: "flex",
     justifyContent: "space-between",
@@ -36,53 +60,181 @@ const Navbar = () => {
     gap: 5,
   });
   const MenuItems = [
-    { Name: "اتصل بنا", Link: "#" },
-    { Name: "شركاتنا", Link: "#" },
-    { Name: "من نحن", Link: "#" },
-    { Name: "الرئيسية", Link: "#" },
+    { Name:  <Button href="http://localhost:3000/contactForm" variant="text"  sx={{color: 'black'}} >اتصل بنا</Button> } ,
+    { ele:  <Button href="http://localhost:3000/category" target= "_blank"  variant="text"  sx={{color: 'black'}} >شركاتنا</Button> },
+    { ele1:  <Button href="http://localhost:3000/details" target= "_blank"  variant="text"  sx={{color: 'black'}} >من نحن</Button> },
+    { ele2:  <Button href="http://localhost:3000/" variant="text"  sx={{color: 'black'}} >الرئيسية</Button> } 
   ];
-  const [open, SetOpen] = useState(false);
+   const [open3, SetOpen] = useState(false);
   return (
-    <AppBar sx={{ background: "white",
-    color: 'black' ,
+    // <AppBar sx={{ background: "white",
+    // color: 'black' ,
     
-    }} position={"static"}>
-      <StyledToolbar>
-        <SocialBox>
-            <Button href="https://www.linkedin.com/company/kayool-najd-holding-co" target= "_blank"  variant="text"  sx={{color: 'black'}} > <LinkedIn /> </Button>
-            <Button href="https://www.youtube.com/" target= "_blank" variant="text" sx={{color: 'black'}} > <Facebook /> </Button>
-            <Button href="https://twitter.com/kayoolnajd/" target= "_blank" variant="text" sx={{color: 'black'}} > <Twitter /> </Button>
-        </SocialBox>
+    // }} position={"static"}>
+    //   <StyledToolbar>
+    //     <SocialBox>
+    //         <Button href="https://www.linkedin.com/company/kayool-najd-holding-co" target= "_blank"  variant="text"  sx={{color: 'black'}} > <LinkedIn /> </Button>
+    //         <Button href="https://www.youtube.com/" target= "_blank" variant="text" sx={{color: 'black'}} > <Facebook /> </Button>
+    //         <Button href="https://twitter.com/kayoolnajd/" target= "_blank" variant="text" sx={{color: 'black'}} > <Twitter /> </Button>
+    //     </SocialBox>
         
-        <MenuBox sx={{ display: { xs: "none", sm: "none", md: "flex" } }}>
-          {MenuItems.map((item) => (
-            <Typography
-              sx={{
-                cursor: "pointer",
-                fontSize: "14px",
-              }}
-            >
-              {item.Name}
-            </Typography>
-          ))}
-        </MenuBox>
+    //     <MenuBox sx={{ display: { xs: "none", sm: "none", md: "flex" } }}>
+    //       {MenuItems.map((item) => (
+    //         <Typography
+    //           sx={{
+    //             cursor: "pointer",
+    //             fontSize: "14px",
+    //           }}
+    //         >
+    //           {item.Name}
+    //         </Typography>
+    //       ))}
+    //     </MenuBox>
 
-        <SearchBox>
-          <InputBase  sx={{ color: "" }} />
-          <MenuIcon
+    //     <SearchBox>
+    //       <InputBase  sx={{ color: "" }} />
+    //       <MenuIcon
+    //         sx={{
+    //           color: "text.secondary",
+    //           display: { xs: "text.secondary", sm: "text.secondary", md: "none" },
+    //         }}
+    //         onClick={() => SetOpen(!open)}
+    //       />
+    //     </SearchBox>
+    //   </StyledToolbar>
+    //   <Menu
+    //     id="demo-positioned-menu"
+    //     aria-labelledby="demo-positioned-button"
+    //     open={open}
+    //     onClose={() => SetOpen(!open)}
+    //     anchorOrigin={{
+    //       vertical: "top",
+    //       horizontal: "right",
+    //     }}
+    //     transformOrigin={{
+    //       vertical: "top",
+    //       horizontal: "left",
+    //     }}
+    //   >
+    //     <Box sx={{ width: 350, height: "90vh" }}>
+    //       {MenuItems.map((item) => (
+    //         <MenuItem
+    //           sx={{
+    //             cursor: "pointer",
+    //             fontSize: "14px",
+    //           }}
+    //         >
+    //           {item.Name}
+    //         </MenuItem>
+    //       ))}
+    //     </Box>
+    //   </Menu>
+    // </AppBar>
+
+    <AppBar position='static' color='transparent'>
+    <Toolbar>
+
+    <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
+    <img src="assets/images/image5.jpg"  style={{width:"260px",}}  alt=""/>
+        </IconButton>
+      
+
+      
+
+      <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
+        
+        
+      </Typography>
+     
+      <Stack sx={{ display: { xs: "none", sm: "none", md: "flex" } }} direction='row' spacing={2} >
+        <Button href="http://localhost:3000/" color='inherit'>الرئيسية</Button>
+        <Button href="http://localhost:3000/category" color='inherit'>شركاتنا</Button>
+        <Button href="http://localhost:3000/details"  color='inherit'>من نحن</Button>
+        
+        <Button
+          color='inherit'
+          id='resources-button'
+          aria-controls={open ? 'resources-menu' : undefined}
+          aria-haspopup='true'
+          aria-expanded={open ? 'true' : undefined}
+          endIcon={<KeyboardArrowDownIcon />}
+          onClick={handleClick}>
+           اتصل بنا
+        </Button>
+
+        <Button
+          color='inherit'
+          id='social-button'
+          aria-controls={open2 ? 'social-menu' : undefined}
+          aria-haspopup='true'
+          aria-expanded={open2 ? 'true' : undefined}
+          endIcon={<KeyboardArrowDownIcon />}
+           onClick={handleClick2}
+          >
+           حسابات السوشل ميديا
+        </Button>
+
+       
+      </Stack>
+
+
+      <Menu
+        id='resources-menu'
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right'
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right'
+        }}
+        MenuListProps={{
+          'aria-labelledby': 'resources-button'
+        }}>
+        <MenuItem onClick={handleClose}><div  > <a style={{float:"right",color:"black"}} href="https://www.linkedin.com/company/kayool-najd-holding-co" target= "_blank"> <span > لاارسال ايميل </span>  </a> </div></MenuItem>
+          <MenuItem onClick={handleClose}><div  > <a style={{float:"right",color:"black"}} href="tel:+966114538201" target= "_blank"> <span >للاتصال</span>  </a> </div></MenuItem>
+      </Menu>
+
+
+      <Menu
+        id='social-menu'
+        anchorEl={anchorEl2}
+        open={open2}
+        onClose={handleClose2}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right'
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right'
+        }}
+        MenuListProps={{
+          'aria-labelledby': 'social-button'
+        }}>
+        <MenuItem onClick={handleClose}><div  > <a style={{float:"right",color:"black"}} href="mailto:info@kayoolnajd.com" target= "_blank"> <span >  لينكد إن<LinkedIn/></span>  </a> </div></MenuItem>
+          <MenuItem onClick={handleClose}><div  > <a style={{float:"right",color:"black"}} href="https://twitter.com/kayoolnajd/" target= "_blank"> <span > تويتر<Twitter/></span>  </a> </div></MenuItem>
+      </Menu>
+
+
+      <MenuIcon
             sx={{
               color: "text.secondary",
               display: { xs: "text.secondary", sm: "text.secondary", md: "none" },
             }}
-            onClick={() => SetOpen(!open)}
+            onClick={() => SetOpen(!open3)}
           />
-        </SearchBox>
-      </StyledToolbar>
-      <Menu
+
+    </Toolbar>
+
+    <Menu
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
-        open={open}
-        onClose={() => SetOpen(!open)}
+        open={open3}
+        onClose={() => SetOpen(!open3)}
         anchorOrigin={{
           vertical: "top",
           horizontal: "right",
@@ -101,12 +253,27 @@ const Navbar = () => {
               }}
             >
               {item.Name}
+              {item.ele}
+              {item.ele1}
+              {item.ele2}
+              
             </MenuItem>
           ))}
         </Box>
       </Menu>
-    </AppBar>
+
+  </AppBar>
   );
 };
+
+
+
+
+
+
+
+
+
+
 
 export default Navbar;

@@ -1,23 +1,11 @@
-import { Box, CardMedia, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
-import detailsImage from "../../static/image5.jpg";
 import postImage from "../../static/OsoulAlsenaah.jpg";
-import Rightbar from "../rightbar/Rightbar";
 
 
 const OsoulAlsenaahD = () => {
   return (
     <Box>
-
-
-      {/* <CardMedia
-              component="img"
-              sx={{height: 200,
-             width: 230, mt:1, marginLeft: 65}}
-              image={postImage}
-              alt="green iguana"
-            /> */}
-
 
             <Box
         sx={{
@@ -61,37 +49,10 @@ const OsoulAlsenaahD = () => {
 
 
             </Typography>
-            {/* <Typography align="center" variant="h4" mt={2}>
-            رؤية
-              
-            </Typography>
-
-            <Typography
-              m={4}
-              color={"gray"}
-              variant="body1"
-              sx={{ fontWeight: 900 }}
-              align="center"
-            >
-              التميز في تنوع الاستثمار
-            </Typography>
-            <Typography align="center" variant="h4" mt={2}>
-            الرسالة
-              
-            </Typography>
-            <Typography
-              m={4}
-              color={"gray"}
-              variant="body1"
-              sx={{ fontWeight: 900 }}
-              align="center"
-            >
-            استخدام أحدث نظريات وطرق الاستثمار لتنويع وتعزيز مصادر الإيرادات في بيئة عمل جاذبة.
- 
-            </Typography> */}
+            
           </Box>
           <Box flex={1}>
-            <Rightbar />
+            
           </Box>
         </Stack>
       </Container>

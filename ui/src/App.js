@@ -36,6 +36,7 @@ function App() {
           <Route path="/altmoohAljadeedM" element={<AltmoohAljadeedM />} />
 
           <Route path="/altmoohS" element={<AltmoohS/>} />
+          <Route path="/category" element={<Categories/>} />
 
           <Route path="/altmoohConcrete" element={<AltmoohConcrete/>} />
 

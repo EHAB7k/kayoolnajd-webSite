@@ -1,12 +1,8 @@
 import React from "react";
 import cardImage from "../../static/image08.jpg";
-import postImage2 from "../../static/image2.jpg";
-import postImage1 from "../../static/image1.jpg";
-import postImage3 from "../../static/image3.jpg";
-import postImage4 from "../../static/image4.jpg";
-import { Box, Grid,Stack,Typography } from "@mui/material";
- import Card from "../card/Card";
-import { width } from "@mui/system";
+
+import { Typography,Box } from "@mui/material";
+
 
 
 import styles from "/Users/ehabhakmi/Desktop/kayoolnajd-webSite/ui/src/Image.module.css";
@@ -18,47 +14,24 @@ import styles from "/Users/ehabhakmi/Desktop/kayoolnajd-webSite/ui/src/Image.mod
 
 const Recents = () => {
   return (
-//     <Stack
-//   direction="row"
-//   justifyContent="space-evenly"
-//   alignItems="flex-start"
-//   spacing={2}
-// >
-//     <Box  width="50%"style={{backgroundColor:"gray"}}  >
-    
-//       <img src={cardImage}></img>
-      
 
-//       <Box
-         
-//         >
-//           <Box sx={{ background: "white", opacity: "0.8"  }} style={{
-            
-//             alignItems: 'center',
-//             justifyContent: 'center',
-//           }}>
-            
-//           </Box>
-//         </Box>
-        
-
-//     </Box>
-//     </Stack>
 <>
 <Typography color={"black"} align="center" variant="h3" m={2}>
 استثمارتنا العقارية
 </Typography>
-<div  className={styles.content}>
-  <div className={styles.left}>
+<Box sx={{width:{xs:"100%",md:"600px",}, padding:"20px", height:"250px"}} className={styles.content}>
+  <Box sx={{marginRight:{md:"-70px",xs:"30px"},height:"100%",width:"45%",margin:"auto", display: "inline-block "}}>
   <img  src={cardImage} style={{marginBottom: 179, marginLeft: -18 , width:183}} />
-  </div>
+  </Box>
 
   <div className={styles.right}>
   <Typography
-               mt={-11}
+               mt={{xs:"14px",md:"-11px",}}
               color={"black"}
               variant="h6"
-              sx={{ fontWeight: 50 ,fontSize:17,}}
+              sx={{ fontWeight: 50 ,fontSize:{xs:"12px",md:"17px"}
+            
+            }}
               align="center"
               
 
@@ -68,7 +41,7 @@ const Recents = () => {
             </Typography>
  
   </div>
-</div>
+</Box>
 </>
 
   );

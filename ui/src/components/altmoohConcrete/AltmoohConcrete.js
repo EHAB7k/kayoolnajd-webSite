@@ -1,7 +1,6 @@
 import { Box, CardMedia, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import postImage from "../../static/alt3.jpg";
-import Rightbar from "../rightbar/Rightbar";
 
 
 const AltmoohConcrete = () => {
