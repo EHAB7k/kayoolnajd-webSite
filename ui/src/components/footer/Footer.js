@@ -2,7 +2,7 @@
 import React from "react";
 import { Box, Stack, Typography, styled,Link,} from "@mui/material";
 import { Facebook,Twitter,LinkedIn} from "@mui/icons-material/";
-
+import { NavLink } from "react-router-dom";
 const SocialBox = styled(Box)({
   display: "flex",
   gap: 11,
@@ -48,7 +48,7 @@ const Footer = () => {
             <ul >
 
                    <Link
-                   href="http://localhost:3000/"
+                   href="/"
                    sx={{ textDecoration: "none" }}
                 >
                   <li style={{textAlign:"center",direction:"rtl"}}  className="active">
@@ -58,15 +58,16 @@ const Footer = () => {
 
               
 
-              <Link
-                   href="http://localhost:3000/details"
-                   sx={{ textDecoration: "none" }}
+              <NavLink
+                    to="/details"
+                   
+                   
                 >
                <li style={{textAlign:"center"}}  >من نحن</li>
-               </Link>
+               </NavLink>
 
               <li style={{textAlign:"center"}}  >
-                <a href="http://localhost:3000/contactForm">
+                <a href="/contactForm">
                   تواصل معانا
                 </a>
               </li>

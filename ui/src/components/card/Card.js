@@ -1,12 +1,13 @@
 import { Box, CardContent, CardMedia, Link} from "@mui/material";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Card = ({ cardImage }) => {
   return (
     <Box>
-      <Link
-        href="http://localhost:3000/details"
-        sx={{ textDecoration: "none" }}
+      <NavLink
+        href="/details"
+       
       >
         {" "}
         <CardMedia
@@ -36,7 +37,7 @@ const Card = ({ cardImage }) => {
 ومن أبرز العقارات برج الجربوع، والذي يتوسط أهم الشوارع الرئيسية ويعتبر معلم في مدينة الخبر. كما أن للشركة مجموعة كبيرة من الأصول العقارية السكنية والتجارية.وأيضا بدأت الشركة في الدخول في مجال بناء وإدارة المجمعات التجارية.
           </Typography> */}
         </CardContent>
-      </Link>
+      </NavLink>
     </Box>
   );
 };

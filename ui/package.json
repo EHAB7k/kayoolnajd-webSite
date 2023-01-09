@@ -1,5 +1,6 @@
 {
   "name": "ui",
+  "homepage": "http://kayoolnajd.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,8 +14,9 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
+    "react-snap": "^1.23.0",
     "react-toastify": "^9.1.1",
     "web-vitals": "^2.1.4"
   },
@@ -22,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [

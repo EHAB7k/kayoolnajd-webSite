@@ -1,3 +1,5 @@
+
+
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import React, { useState } from "react";
 import {
@@ -18,6 +20,8 @@ import {
   Twitter,
   LinkedIn
 } from "@mui/icons-material/";
+
+
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState (null);
@@ -40,6 +44,8 @@ const handleClose2 = () => {
 };
 
 
+
+
   const StyledToolbar = styled(Toolbar)({
     display: "flex",
     justifyContent: "space-between",
@@ -57,10 +63,10 @@ const handleClose2 = () => {
     gap: 5,
   });
   const MenuItems = [
-    { Name:  <Button href="http://localhost:3000/contactForm" variant="text"  sx={{color: 'black'}} >اتصل بنا</Button> } ,
-    { ele:  <Button href="http://localhost:3000/category" target= "_blank"  variant="text"  sx={{color: 'black'}} >شركاتنا</Button> },
-    { ele1:  <Button href="http://localhost:3000/details" target= "_blank"  variant="text"  sx={{color: 'black'}} >من نحن</Button> },
-    { ele2:  <Button href="http://localhost:3000/" variant="text"  sx={{color: 'black'}} >الرئيسية</Button> } 
+    { Name:  <Button href="https://kayoolnajd.com/contactForm" variant="text"  sx={{color: 'black'}} >اتصل بنا</Button> } ,
+    { ele:  <Button href="https://kayoolnajd.com/category" target= "_blank"  variant="text"  sx={{color: 'black'}} >شركاتنا</Button> },
+    { ele1:  <Button href="https://kayoolnajd.com/details" target= "_blank"  variant="text"  sx={{color: 'black'}} >من نحن</Button> },
+    { ele2:  <Button href="/" variant="text"  sx={{color: 'black'}} >الرئيسية</Button> } 
   ];
    const [open3, SetOpen] = useState(false);
   return (
@@ -78,11 +84,14 @@ const handleClose2 = () => {
         
         
       </Typography>
+
+
+
      
       <Stack sx={{ display: { xs: "none", sm: "none", md: "flex" } }} direction='row' spacing={2} >
-        <Button href="http://localhost:3000/" color='inherit'>الرئيسية</Button>
-        <Button href="http://localhost:3000/category" color='inherit'>شركاتنا</Button>
-        <Button href="http://localhost:3000/details"  color='inherit'>من نحن</Button>
+        <Button href="/" color='inherit'>الرئيسية</Button>
+        <Button href="/category" color='inherit'>شركاتنا</Button>
+        <Button href="/details"  color='inherit'>من نحن</Button>
         
         <Button
           color='inherit'
@@ -127,7 +136,7 @@ const handleClose2 = () => {
         MenuListProps={{
           'aria-labelledby': 'resources-button'
         }}>
-        <MenuItem onClick={handleClose}><div  > <a style={{float:"right",color:"black"}} href="https://www.linkedin.com/company/kayool-najd-holding-co" target= "_blank"> <span > لاارسال ايميل </span>  </a> </div></MenuItem>
+        <MenuItem onClick={handleClose}><div  > <a style={{float:"right",color:"black"}} href="mailto:info@kayoolnajd.com" target= "_blank"> <span > لاارسال ايميل </span>  </a> </div></MenuItem>
           <MenuItem onClick={handleClose}><div  > <a style={{float:"right",color:"black"}} href="tel:+966114538201" target= "_blank"> <span >للاتصال</span>  </a> </div></MenuItem>
       </Menu>
 

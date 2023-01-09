@@ -1,18 +1,21 @@
 import { Box,Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import postImage from "../../static/AltmoohAljadeed.jpg";
+import Categories from "../category/Categories";
 
 const AltmoohAljadeedM = () => {
   return (
    
     <Container>
+      <br/>
     <Stack
             
             direction={{ xs: "column"  , sm: "column" }}
             justifyContent="center"
             alignItems="center"
             spacing={2}
-    >
+      >
+        <Categories/>
       
       
       

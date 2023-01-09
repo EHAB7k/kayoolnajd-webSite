@@ -1,7 +1,7 @@
 import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Route, Switch} from "react-router-dom"
 import Details from "./components/details/Details";
 import OsoulAlsenaahD from "./components/osoulAlsenaahD/OsoulAlsenaahD";
 import AltmoohAljadeedM from "./components/altmoohM/AltmoohAljadeedM";
@@ -20,33 +20,38 @@ function App() {
     <>
     
     <Box  >
-      <Navbar />
-      {/* <Hero/> */}
-      
-      <BrowserRouter>
-     
-      
-        <Routes>
-        
-          <Route path="/" element={<Home />} />
-          <Route path="/details" element={<Details />} />
-          <Route path="/osoulAlsenaahD" element={<OsoulAlsenaahD />} />
-          <Route path="/altmoohAljadeedM" element={<AltmoohAljadeedM />} />
+   
+        <Navbar />
 
-          <Route path="/altmoohS" element={<AltmoohS/>} />
-          <Route path="/category" element={<Categories/>} />
+        <Switch>
+       
+          <Route path="/" exact={true} component={Home} />
+          <Route path="/details" component={Details} />
+          <Route path="/osoulAlsenaahD" component={OsoulAlsenaahD} />
+          <Route path="/altmoohAljadeedM" component={AltmoohAljadeedM} />
+          <Route path="/altmoohS" component={AltmoohS} />
+          <Route path="/category" component={Categories} />
+          <Route path="/altmoohConcrete" component={AltmoohConcrete} />
+          <Route path="/altmoohL" component={AltmoohL} />
+          <Route path="/contactForm" component={ContactForm} />
+          {/* <Route exact path="/details" element={<Details />} /> */}
+          {/* <Route exact path="/osoulAlsenaahD" element={<OsoulAlsenaahD />} />
+          <Route exact path="/altmoohAljadeedM" element={<AltmoohAljadeedM />} /> */}
 
-          <Route path="/altmoohConcrete" element={<AltmoohConcrete/>} />
+          {/* <Route exact path="/altmoohS" element={<AltmoohS/>} /> */}
+          {/* <Route exact path="/category" element={<Categories/>} />
 
-          <Route path="/altmoohL" element={<AltmoohL/>} />
-          <Route path="/contactForm" element={<ContactForm/>} />
+          <Route exact path="/altmoohConcrete" element={<AltmoohConcrete/>} />
+
+          <Route exact path="/altmoohL" element={<AltmoohL/>} />
+          <Route exact path="/contactForm" element={<ContactForm/>} /> */}
           
           
           
           
-        </Routes>
-        
-      </BrowserRouter>
+          </Switch>
+
+
       
       
       <Footer/>

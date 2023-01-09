@@ -1,6 +1,7 @@
 import { Box,Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import postImage from "../../static/alt3.jpg";
+import Categories from "../category/Categories";
 
 
 const AltmoohConcrete = () => {
@@ -18,6 +19,7 @@ const AltmoohConcrete = () => {
              
         }}
       >
+        <Categories/>
         
       </Box>
       <Container>

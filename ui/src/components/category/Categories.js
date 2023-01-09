@@ -53,7 +53,7 @@ const Categories = () => {
       
         
         <Link
-        href="http://localhost:3000/altmoohL"
+        href="/altmoohL"
         sx={{ textDecoration: "none" }}
       >
         <StyledBox sx={{ backgroundImage: `url(${alt5})`,height: 230,
@@ -63,7 +63,7 @@ const Categories = () => {
         </StyledBox>
         </Link>
         <Link
-        href="http://localhost:3000/altmoohConcrete"
+        href="/altmoohConcrete"
         sx={{ textDecoration: "none" }}
       >
         <StyledBox sx={{ backgroundImage: `url(${alt3})`,height: 230,
@@ -74,7 +74,7 @@ const Categories = () => {
         </Link>
 
         <Link
-        href="http://localhost:3000/altmoohS"
+        href="/altmoohS"
         sx={{ textDecoration: "none" }}
       >
 
@@ -86,7 +86,7 @@ const Categories = () => {
         </Link>
 
         <Link
-        href="http://localhost:3000/altmoohAljadeedM"
+        href="/altmoohAljadeedM"
         sx={{ textDecoration: "none" }}
       >
         <StyledBox sx={{ backgroundImage: `url(${altmoohAljadeed})` ,height: 230,
@@ -96,7 +96,7 @@ const Categories = () => {
         </Link>
                 
         <Link
-        href="http://localhost:3000/osoulAlsenaahD"
+        href="/osoulAlsenaahD"
         sx={{ textDecoration: "none" }}
       > 
       <StyledBox sx={{ backgroundImage: `url(${osoulAlsenaahImage})`,height: 200,
