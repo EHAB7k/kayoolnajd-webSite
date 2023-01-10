@@ -6,55 +6,101 @@ import Categories from "../category/Categories";
 
 const AltmoohConcrete = () => {
   return (
-    <Box >
-            <Box
-        sx={{
-          backgroundImage: `url(${postImage})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          height: 200,
-          width: 230,
-          mt:1,
-          marginLeft: 66
+//     <Box >
+
+
+//             <Box
+//         sx={{
+//           backgroundImage: `url(${postImage})`,
+//           backgroundPosition: "center",
+//           backgroundSize: "cover",
+//           height: 200,
+//           width: 230,
+//           mt:1,
+//           marginLeft: 66
              
+//         }}
+//       >
+       
+        
+//       </Box>
+//       <Container>
+        
+//         <Stack
+//           direction={{ xs: "column", md: "row" }}
+//           spacing={{ xs: 1, sm: 2, md: 8 }}
+//           mt={0}
+//         >
+            
+//           <Box flex={6} sx={{ padding: "18px 100px 100px 100px" }}>
+            
+            
+
+            
+//             <Typography
+//               m={4}
+//               color={"gray"}
+//               variant="body1"
+//               sx={{ fontWeight: 900 }}
+//               align="center"
+//             >
+//                 تعنى شركة الطموح الجديد للخرسانة الجاهزة بإنتاج الخرسانة الجاهزة لتلبية احتياج قطاع البناء وتوفير منتج ذو جودة عالية ودرجة ممتازة.
+// شركة الطموح الجديد حاصلة على شهادة الجودة وشهادة السلامة والصحة المهنية 
+// ISO 9001—ISO 45001
+// تحرص شركة الطموح الجديد على أن يكون المنتج بأعلى مستوى من الجودة لذا فإن لديها مختبر خاص بضبط جودة الخرسانة وعمل الاختبارات اللازمة.
+
+//             </Typography>
+           
+//           </Box>
+         
+//         </Stack>
+//       </Container>
+      
+//     </Box>
+<Container>
+<Stack
+        
+        direction={{ xs: "column"  , sm: "column" }}
+        justifyContent="center"
+        alignItems="center"
+        spacing={2}
+>
+  
+  <Categories/>
+  
+        <Box
+        sx={{
+        backgroundImage: `url(${postImage})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        height: 200,
+        width: 195,
+        margin: "auto"
+
         }}
       >
-        <Categories/>
-        
-      </Box>
-      <Container>
-        
-        <Stack
-          direction={{ xs: "column", md: "row" }}
-          spacing={{ xs: 1, sm: 2, md: 8 }}
-          mt={0}
-        >
-            
-          <Box flex={6} sx={{ padding: "18px 100px 100px 100px" }}>
-            
-            
 
-            
-            <Typography
-              m={4}
-              color={"gray"}
-              variant="body1"
-              sx={{ fontWeight: 900 }}
-              align="center"
-            >
-                تعنى شركة الطموح الجديد للخرسانة الجاهزة بإنتاج الخرسانة الجاهزة لتلبية احتياج قطاع البناء وتوفير منتج ذو جودة عالية ودرجة ممتازة.
-شركة الطموح الجديد حاصلة على شهادة الجودة وشهادة السلامة والصحة المهنية 
-ISO 9001—ISO 45001
-تحرص شركة الطموح الجديد على أن يكون المنتج بأعلى مستوى من الجودة لذا فإن لديها مختبر خاص بضبط جودة الخرسانة وعمل الاختبارات اللازمة.
+      </Box>   
+  <Box sx={{ }}>            
+    <Typography
+      m={4}
+      color={"gray"}
+      variant="body1"
+      sx={{ fontWeight: 900 }}
+      align="center"
+      marginBottom={14}
+    >
+       
+                 تعنى شركة الطموح الجديد للخرسانة الجاهزة بإنتاج الخرسانة الجاهزة لتلبية احتياج قطاع البناء وتوفير منتج ذو جودة عالية ودرجة ممتازة.
+                   شركة الطموح الجديد حاصلة على شهادة الجودة وشهادة السلامة والصحة المهنية 
+                    ISO 9001—ISO 45001
+                  تحرص شركة الطموح الجديد على أن يكون المنتج بأعلى مستوى من الجودة لذا فإن لديها مختبر خاص بضبط جودة الخرسانة وعمل الاختبارات اللازمة. 
 
-            </Typography>
-           
-          </Box>
-         
-        </Stack>
-      </Container>
-      
-    </Box>
+    </Typography>
+  </Box>
+  
+</Stack>
+</Container>
   );
 };
 

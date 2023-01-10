@@ -66,11 +66,18 @@ const Footer = () => {
                <li style={{textAlign:"center"}}  >من نحن</li>
                </NavLink>
 
-              <li style={{textAlign:"center"}}  >
+              {/* <li style={{textAlign:"center"}}  >
                 <a href="/contactForm">
                   تواصل معانا
                 </a>
-              </li>
+              </li> */}
+                  <NavLink
+                    to="/contactForm"
+                   
+                   
+                >
+               <li style={{textAlign:"center"}}  >تواصل معانا</li>
+               </NavLink>
              
             </ul>
           </div>

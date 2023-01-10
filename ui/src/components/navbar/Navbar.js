@@ -20,6 +20,7 @@ import {
   Twitter,
   LinkedIn
 } from "@mui/icons-material/";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -89,9 +90,35 @@ const handleClose2 = () => {
 
      
       <Stack sx={{ display: { xs: "none", sm: "none", md: "flex" } }} direction='row' spacing={2} >
-        <Button href="/" color='inherit'>الرئيسية</Button>
-        <Button href="/category" color='inherit'>شركاتنا</Button>
-        <Button href="/details"  color='inherit'>من نحن</Button>
+          <NavLink to="/"
+            style={({ isActive }) => ({
+    color: isActive ? '#000' : '#000',
+    background: isActive ? '#ffffff' : '#ffffff',
+            })}
+          >
+            <Button color='inherit'>الرئيسية</Button>
+          
+          </NavLink>
+
+       <NavLink to="/category" 
+       style={({ isActive }) => ({
+    color: isActive ? '#000' : '#000',
+    background: isActive ? '#ffffff' : '#ffffff',
+            })}
+          >
+            <Button color='inherit'>شركاتنا</Button>
+          
+          </NavLink>
+
+          <NavLink to="/details"
+            style={({ isActive }) => ({
+    color: isActive ? '#000' : '#000',
+    background: isActive ? '#ffffff' : '#ffffff',
+            })}
+          >
+            <Button color='inherit'>من نحن</Button>
+          
+          </NavLink>
         
         <Button
           color='inherit'
@@ -136,8 +163,8 @@ const handleClose2 = () => {
         MenuListProps={{
           'aria-labelledby': 'resources-button'
         }}>
-        <MenuItem onClick={handleClose}><div  > <a style={{float:"right",color:"black"}} href="mailto:info@kayoolnajd.com" target= "_blank"> <span > لاارسال ايميل </span>  </a> </div></MenuItem>
-          <MenuItem onClick={handleClose}><div  > <a style={{float:"right",color:"black"}} href="tel:+966114538201" target= "_blank"> <span >للاتصال</span>  </a> </div></MenuItem>
+        <MenuItem onClick={handleClose}><div  > <a style={{float:"right",color:"black"}} href="mailto:info@kayoolnajd.com" target= "_blank"> <span > ارسال ايميل </span>  </a> </div></MenuItem>
+          <MenuItem onClick={handleClose}><div  > <a style={{float:"right",color:"black"}} href="tel:+966114538201" target= "_blank"> <span >اتصال</span>  </a> </div></MenuItem>
       </Menu>
 
 

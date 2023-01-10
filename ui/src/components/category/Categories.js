@@ -5,7 +5,7 @@ import altmoohAljadeed from "../../static/AltmoohAljadeed.jpg";
 import alt3 from "../../static/alt3.jpg";
 import alt5 from "../../static/alt5.jpeg";
 import { Box, Stack, styled, Typography,Link } from "@mui/material";
-
+import { NavLink } from "react-router-dom";
 const StyledBox = styled(Box)({
 
   cursor: "pointer",
@@ -52,30 +52,30 @@ const Categories = () => {
        
       
         
-        <Link
-        href="/altmoohL"
-        sx={{ textDecoration: "none" }}
+        <NavLink
+        to="/altmoohL"
+        
       >
         <StyledBox sx={{ backgroundImage: `url(${alt5})`,height: 230,
   width: 230,}}>
          
          
         </StyledBox>
-        </Link>
-        <Link
-        href="/altmoohConcrete"
-        sx={{ textDecoration: "none" }}
+        </NavLink>
+        <NavLink
+        to="/altmoohConcrete"
+        // sx={{ textDecoration: "none" }}
       >
         <StyledBox sx={{ backgroundImage: `url(${alt3})`,height: 230,
   width: 230,}}>
           
 
         </StyledBox>
-        </Link>
+        </NavLink>
 
-        <Link
-        href="/altmoohS"
-        sx={{ textDecoration: "none" }}
+        <NavLink
+        to="/altmoohS"
+        
       >
 
         <StyledBox sx={{ backgroundImage: `url(${serviceAltmooh})`,height: 230,
@@ -83,28 +83,28 @@ const Categories = () => {
           
 
         </StyledBox>
-        </Link>
+        </NavLink>
 
-        <Link
-        href="/altmoohAljadeedM"
-        sx={{ textDecoration: "none" }}
+        <NavLink
+        to="/altmoohAljadeedM"
+        // sx={{ textDecoration: "none" }}
       >
         <StyledBox sx={{ backgroundImage: `url(${altmoohAljadeed})` ,height: 230,
          width: 230, }}>
              
         </StyledBox>
-        </Link>
+        </NavLink>
                 
-        <Link
-        href="/osoulAlsenaahD"
-        sx={{ textDecoration: "none" }}
+        <NavLink
+        to="/osoulAlsenaahD"
+        
       > 
       <StyledBox sx={{ backgroundImage: `url(${osoulAlsenaahImage})`,height: 200,
       width: 230, mt:1}} >
           
 
         </StyledBox>
-        </Link>
+        </NavLink>
        
       </Stack>
      
