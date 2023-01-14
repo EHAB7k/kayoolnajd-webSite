@@ -34,20 +34,7 @@ function App() {
           <Route path="/altmoohConcrete" component={AltmoohConcrete} />
           <Route path="/altmoohL" component={AltmoohL} />
           <Route path="/contactForm" component={ContactForm} />
-          {/* <Route exact path="/details" element={<Details />} /> */}
-          {/* <Route exact path="/osoulAlsenaahD" element={<OsoulAlsenaahD />} />
-          <Route exact path="/altmoohAljadeedM" element={<AltmoohAljadeedM />} /> */}
 
-          {/* <Route exact path="/altmoohS" element={<AltmoohS/>} /> */}
-          {/* <Route exact path="/category" element={<Categories/>} />
-
-          <Route exact path="/altmoohConcrete" element={<AltmoohConcrete/>} />
-
-          <Route exact path="/altmoohL" element={<AltmoohL/>} />
-          <Route exact path="/contactForm" element={<ContactForm/>} /> */}
-          
-          
-          
           
           </Switch>
 
